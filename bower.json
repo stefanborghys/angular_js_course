@@ -1,0 +1,27 @@
+{
+  "name": "angular_course",
+  "description": "Angular JS introduction course.",
+  "main": "index.js",
+  "authors": [
+    "Stefan Borghys"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "Angular",
+    "JS",
+    "introduction",
+    "course"
+  ],
+  "homepage": "https://github.com/stefanborghys/angular_js_course",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "angular_course",
+  "version": "1.0.0",
+  "description": "Angular JS introduction course.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stefanborghys/angular_js_course.git"
+  },
+  "keywords": [
+    "Angular",
+    "JS",
+    "introduction",
+    "course"
+  ],
+  "author": "Stefan Borghys",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stefanborghys/angular_js_course/issues"
+  },
+  "homepage": "https://github.com/stefanborghys/angular_js_course#readme"
+}
