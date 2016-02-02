@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Angular JS Course</title>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- OL {
+        counter-reset: item
+    }
+    
+    LI {
+        display: block
+    }
+    
+    LI:before {
+        content: counters(item, ".") " ";
+        counter-increment: item
+    }
+    
+    -->
+    <style>
+    .img-logo {
+        width: 100px;
+    }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Angular JS Course</h1>
+        <h1>JavaScript</h1>
+        <h2>Introduction</h2>
+        <img src="https://www.javascript.com/images/brand/logo.svg" class="img-responsive img-logo" alt="JavaScript.com logo">
+        <h3>Statistics</h3>
+        <p>
+            <a href="http://w3techs.com/technologies/overview/client_side_language/all" target="_blank">Usage of client-side programming languages for websites</a>
+            <br/>
+            <a href="http://w3techs.com/technologies/overview/javascript_library/all" target="_blank">Overview of Usage</a> of JavaScript libraries for websites.
+        </p>
+        <p>
+            <ul>
+                <li>well-maintained and evolving <a href="https://en.wikipedia.org/wiki/ECMAScript" target="_blank">ECMAScript</a> standard</li>
+                <li>functions are a first class citizen (pass functions as parameters, variables can point to functions)</li>
+                <li>support for typing (via <a href="http://www.typescriptlang.org/" target="_blank">TypeScript</a>, <a href="http://coffeescript.org/" target="_blank">Coffee Script</a>, <a href="https://en.wikipedia.org/wiki/ECMAScript" target="_blank">ECMAScript</a>)</li>
+                <li>runtime environment (<a href="https://nodejs.org/" target="_blank">Node.js</a>)</li>
+                <li>dependency managment (<a href="https://www.npmjs.com/" target="_blank">NPM</a>, <a href="http://bower.io/" target="_blank">Bower</a>)</li>
+                <li>test frameworks (<a href="http://jasmine.github.io/" target="_blank">Jasmine</a>, <a href="https://mochajs.org/" target="_blank">Mocha</a>, <a href="https://qunitjs.com/" target="_blank">QUnit</a>, <a href="http://jnicklas.github.io/capybara/" target="_blank">Capybara</a>, <a href="https://angular.github.io/protractor/" target="_blank">Protractor</a>)</li>
+                <li>test runners (<a href="http://karma-runner.github.io/" target="_blank">Karma</a>)</li>
+                <li>mature (browser) debugging (<a href="https://developer.chrome.com/devtools" target="_blank">Chrome DevTools</a>, <a href="https://developer.mozilla.org/nl/docs/Tools/Web_Console" target="_blank">Mozilla Web Console</a>)</li>
+                <li>mature utility frameworks (<a href="https://jquery.com/" target="_blank">JQuery</a>, <a href="http://prototypejs.org/" target="_blank">Prototype JS</a>, <a href="http://mootools.net/" target="_blank">Moo Tools</a>)</li>
+                <li>(mature) web frameworks (<a href="https://angularjs.org/" target="_blank">Angular JS</a>, <a href="https://www.meteor.com/" target="_blank">Meteor</a>, <a href="http://backbonejs.org/" target="_blank">Backbone JS</a>, <a href="http://expressjs.com/" target="_blank">Express</a>, <a href="http://koajs.com/" target="_blank">Koa JS</a>, <a href="http://knockoutjs.com/" target="_blank">Knockout js</a>)</li>
+                <li>build / task management (<a href="http://gruntjs.com/" target="_blank">Grunt</a>)</li>
+                <li>tools (<a href="https://www.browsersync.io/" target="_blank">browser sync</a>)</li>
+                <li>
+                    <abbr title="Integrated development environment" class="initialism">IDE</abbr> (<a href="http://www.sublimetext.com/" target="_blank">Sublime Text</a>, <a href="https://atom.io/" target="_blank">Atom</a>, <a href="https://www.jetbrains.com/webstorm/" target="_blank">WebStorm</a>)</li>
+            </ul>
+        </p>
+        <h3>Code snippets</h3>
+        <p>
+            <dl>
+                <dt><a href="http://codepen.io/" target="_blank">Codepen IO</a></dt>
+                <dd>Playground for the front end side of the web.</dd>
+                <dt><a href="https://codyhouse.co/" target="_blank">Codyhouse</a></dt>
+                <dd>A free library of HTML, CSS, JS nuggets.</dd>
+                <dt><a href="https://css-tricks.com/snippets/javascript/" target="_blank">CSS-Tricks - JavaScript</a></dt>
+                <dd>JavaScript code snippets.</dd>
+                <dt><a href="http://plnkr.co/" target="_blank">Plunker</a></dt>
+                <dd>An online community for creating, collaborating on and sharing your web development ideas.</dd>
+            </dl>
+        </p>
+        <h3>Testing</h3>
+        <p>
+            <dl>
+                <dt><a href="http://webdriver.io/" target="_blank">Webdriver IO</a></dt>
+                <dd>Control a browser or a mobile application with just a few lines of code.
+                    <br/>Your test code will look simple, concise and easy to read.</dd>
+                <dt><a href="http://phantomjs.org/" target="_blank">Phantom JS</a></dt>
+                <dd>Run web applications headless using JavaScript.
+                    <br/>Optimal for headless website testing, screen capture, page automation, network monitoring.</dd>
+            </dl>
+        </p>
+        <h3>Modules and bundling</h3>
+        <p>
+            <dl>
+                <dt><a href="http://browserify.org/" target="_blank">Browserify</a></dt>
+                <dd>Bundle all of your project's dependencies and combine them into one file.</dd>
+                <dt><a href="https://webpack.github.io/" target="_blank">Webpack</a></dt>
+                <dd>A bundler for JavaScript and friends.
+                    <br/>Packs many modules into a few bundled assets.
+                    <br/>Code Splitting allows to load parts for the application on demand.
+                    <br/>Through "loaders" modules can be CommonJs, AMD, ES6 modules, CSS, Images, JSON, Coffeescript, LESS, ... and your custom stuff.</dd>
+            </dl>
+        </p>
+        <h3>Build</h3>
+        <p>
+            <dl>
+                <dt><a href="http://brunch.io/" target="_blank">Brunch IO</a></dt>
+                <dd>Brunch is an ultra-fast HTML5 build tool.
+                    <br/>Compiles your scripts, templates, styles.
+                    <br/>Lints them, wraps the scripts and templates in common.js / AMD modules.
+                    <br/>Concatenates scripts and styles, generates source maps for concatenated files.
+                    <br/>Copies assets and static files, shrinks the output by minifying code and optimizing images.
+                    <br/>Watches your files for changes, notifies you about errors via console and system notifications.
+                </dd>
+                <dt><a href="http://broccolijs.com/" target="_blank">Broccoli JS</a></dt>
+                <dd>Fast JavaScript build system extendable using plugins.</dd>
+                <dt><a href="https://middlemanapp.com/" target="_blank">Middleman</a></dt>
+                <dd>Middleman is a static site generator using all the shortcuts and tools in modern web development.</dd>
+            </dl>
+        </p>
+        <h3>Tools (IDEs, plugins, ...)</h3>
+        <p>
+            <dl>
+                <dt><a href="http://www.nodeclipse.org/" target="_blank">Nodeclipse</a></dt>
+                <dd>Multiple tools for JavaScript and Java development.
+                    <br/>Includes Enide Studio, an Eclipse custom Node JS, JavaScript Eclipse environment.
+                </dd>
+            </dl>
+        </p>
+        <h3>Code Quality</h3>
+        <p>
+            <dl>
+                <dt><a href="http://ternjs.net/" target="_blank">Tern</a></dt>
+                <dd>A stand-alone code-analysis engine for JavaScript.
+                    <br/>It is intended to be used with a code editor plugin to enhance the editor's support for intelligent JavaScript editing.
+                </dd>
+                <dt><a href="http://jshint.com/" target="_blank">JS Hint</a></dt>
+                <dd>JSHint, is a tool that helps to detect errors and potential problems in your JavaScript code.</dd>
+            </dl>
+        </p>
+        <h3>Documentation</h3>
+        <p>
+            <dl>
+                <dt><a href="http://yui.github.io/yuidoc/" target="_blank">YUI Doc</a></dt>
+                <dd>JavaScript Documentation Tool.</dd>
+                <dt><a href="http://usejsdoc.org/" target="_blank">Use JS Doc</a></dt>
+                <dd>JavaScript documentation using annotations.</dd>
+            </dl>
+        </p>
+        <h3>Utils</h3>
+        <p>
+            <dl>
+                <dt><a href="http://codemirror.net/" target="_blank">Code Mirror</a></dt>
+                <dd>Versatile text editor implemented in JavaScript for the browser.
+                    <br/>It is specialized for editing code, and comes with a number of language modes and addons that implement more advanced editing functionality.</dd>
+                <dt><a href="https://modernizr.com/" target="_blank">Modernizr</a></dt>
+                <dd>Modernizr tells you what HTML, CSS and JavaScript features the user’s browser has to offer.
+                    <br/>You can use the results to tailor the experience to the user.</dd>
+                <dt><a href="http://medialize.github.io/URI.js/" target="_blank">URI JS</a></dt>
+                <dd>URI.js is a javascript library for working with URLs.</dd>
+                <dt><a href="http://createjs.com/soundjs" target="_blank">Sound JS</a></dt>
+                <dd>A JavaScript library that provides a simple API, and powerful features to make working with audio a breeze.</dd>
+                <dt><a href="http://createjs.com/tweenjs" target="_blank">Tween JS</a></dt>
+                <dd>A simple but powerful JavaScript library for tweening and animating HTML5 and JavaScript properties.</dd>
+                <dt><a href="http://fullcalendar.io/" target="_blank">Full Calendar IO</a></dt>
+                <dd>A JavaScript event calendar. Customizable and open source.
+                    <br/>FullCalendar is a drag-n-drop jQuery plugin for displaying events on a full-sized calendar.</dd>
+                <dt><a href="https://refreshless.com/nouislider/" target="_blank">No UI Slider</a></dt>
+                <dd>JavaScript range slider.</dd>
+            </dl>
+        </p>
+        <h2>Tutorials</h2>
+        <p>
+            <ul class="list-group">
+                <li><a href="http://www.w3schools.com/js/" target="_blank">W3 Schools - JavaScript Tutorial</a></li>
+            </ul>
+        </p>
+        <h2>Conferences</h2>
+        <p>
+            <ul class="list-group">
+                <li><a href="http://jsconf.com/" target="_blank">JS Conf</a></li>
+            </ul>
+        </p>
+        <h1><abbr title="HyperText Markup Language" class="initialism">HTML</abbr></h1>
+        <h3>Code snippets</h3>
+        <p>
+            <dl>
+                <dt><a href="https://css-tricks.com/snippets/html/" target="_blank">CSS-Tricks - HTML</a></dt>
+                <dd>HTML code snippets.</dd>
+            </dl>
+        </p>
+        <h2>Tutorials</h2>
+        <p>
+            <ul class="list-group">
+                <li><a href="http://www.w3schools.com/html/" target="_blank">W3 Schools - HTML(5) Tutorial</a></li>
+            </ul>
+        </p>
+        <h1><abbr title="Cascading Style Sheets" class="initialism">CSS</abbr></h1>
+        <h2>Introduction</h2>
+        <h3>Code snippets</h3>
+        <p>
+            <dl>
+                <dt><a href="https://css-tricks.com/snippets/css/" target="_blank">CSS-Tricks - CSS</a></dt>
+                <dd>CSS code snippets.</dd>
+            </dl>
+        </p>
+        <h3>CSS extentions</h3>
+        <p>
+            <dl>
+                <dt><a href="http://lesscss.org/" target="_blank">Less</a></dt>
+                <dd>Less is a CSS pre-processor, meaning that it extends the CSS language,
+                    <br/>adding features that allow variables, mixins, functions and many other techniques
+                    <br/>that allow you to make CSS that is more maintainable, themable and extendable.</dd>
+                <dt><a href="http://sass-lang.com/" target="_blank">Sass</a></dt>
+                <dd>Sass is the most mature, stable, and powerful professional grade CSS extension language in the world.</dd>
+            </dl>
+        </p>
+        <h3>Responsive Frameworks</h3>
+        <p>
+            <dl>
+                <dt><a href="http://purecss.io/" target="_blank">Pure CSS</a></dt>
+                <dd>Set of small, responsive CSS modules that you can use in every web project.</dd>
+                <dt><a href="http://foundation.zurb.com/" target="_blank">Zurb Foundation</a></dt>
+                <dd>The most advanced responsive front-end framework in the world.</dd>
+                <dt><a href="http://getskeleton.com/" target="_blank">Skeleton</a></dt>
+                <dd>Dead simple, responsive boilerplate.</dd>
+                <dt><a href="http://weice.in/ivory/" target="_blank">Ivory</a></dt>
+                <dd>Simple, Flexible, Powerful Responsive front-end framework.</dd>
+                <dt><a href="http://getbase.org/" target="_blank">Base</a></dt>
+                <dd>A Rock Solid, Responsive HTML/CSS Framework.</dd>
+            </dl>
+        </p>
+        <h3>Animation</h3>
+        <p>
+            <dl>
+                <dt><a href="https://daneden.github.io/animate.css/" target="_blank">Animate CSS</a></dt>
+                <dd>Apply animations by just applying the preferred classes.</dd>
+                <dt><a href="https://connoratherton.com/loaders" target="_blank">Loaders CSS</a></dt>
+                <dd>Delightful and performance-focused pure css loading animations.</dd>
+            </dl>
+        </p>
+        <h3>Testing</h3>
+        <p>
+            <dl>
+                <dt><a href="http://resizr.co/" target="_blank">Resizr</a></dt>
+                <dd>Test your responsive web page.</dd>
+            </dl>
+        </p>
+        <h2>Tutorials</h2>
+        <p>
+            <ul class="list-group">
+                <li><a href="http://www.w3schools.com/css/" target="_blank">W3 Schools - CSS Tutorial</a></li>
+                <li><a href="https://scotch.io/tag/css" target="_blank">Scotch IO - CSS articles</a></li>
+            </ul>
+        </p>
+        <h1>Node.js</h1>
+        <h2>Introduction</h2>
+        <img src="https://nodejs.org/static/images/logo.svg" class="img-responsive img-logo" alt="Node.js logo">
+        <p><a href="https://nodejs.org/" target="_blank">Node.js</a> is a JavaScript runtime, built on <a href="https://developers.google.com/v8/" target="_blank">Chrome's V8 JavaScript engine</a>.
+            <br/>Node.js ships with it's package ecosystem <a href="https://www.npmjs.com/" target="_blank">npm</a>, the largest ecosystem of open source libraries in the world.
+        </p>
+        <p>
+            <dl>
+                <dt><a href="https://en.wikipedia.org/wiki/Runtime_system" target="_blank">Runtime system</a></dt>
+                <dd>Software designed to support the execution of computer programs.</dd>
+                <dt><a href="https://en.wikipedia.org/wiki/Runtime_library" target="_blank">Runtime library</a></dt>
+                <dd>A program library designed to implement functions built into a programming language.</dd>
+                <dt><a href="https://developers.google.com/v8/" target="_blank">Chrome V8</a></dt>
+                <dd>V8 is Google's open source high-performance JavaScript engine, written in C++ and used in Google Chrome, the open source browser from Google.
+                    <br/>It implements ECMAScript as specified in ECMA-262, 3rd edition, and runs on Windows XP or later, Mac OS X 10.5+, and Linux systems that use IA-32, ARM or MIPS processors.
+                    <br/>V8 can run standalone, or can be embedded into any C++ application.</dd>
+            </dl>
+        </p>
+        <h2>Installation</h2>
+        <p>
+            <ol>
+                <li><a href="https://nodejs.org/en/download/" target="_blank">download Node.js (v 4.2.3)</a>: <a href="https://nodejs.org/dist/v4.2.3/node-v4.2.3.pkg" target="_blank">Mac OS X (x64)</a>, <a href="https://nodejs.org/dist/v4.2.3/node-v4.2.3-x64.msi" target="_blank">Windows (x64)</a>, <a href="https://nodejs.org/dist/v4.2.3/node-v4.2.3-linux-x64.tar.gz" target="_blank">Linux (x64)</a>
+                </li>
+                <li>add
+                    <kbd>/usr/local/bin</kbd> in your
+                    <kbd>&#36;PATH</kbd>
+                </li>
+                <li>check if terminal / console command
+                    <kbd>node -v</kbd> returns the installed version number
+                    <samp>&#39;v4.2.3&#39;</samp>
+                </li>
+                <li>check if terminal / console command
+                    <kbd>npm -v</kbd> returns the installed version number
+                    <samp>&#39;2.14.7&#39;</samp>
+                </li>
+            </ol>
+        </p>
+        <h1>npm</h1>
+        <h2>Introduction</h2>
+        <img src="https://www.npmjs.com/static/images/npm-logo.svg" class="img-responsive img-logo" alt="npm logo">
+        <p>Package manager for JavaScript applications.
+            <br/>Comparable to <a href="https://maven.apache.org/" target="_blank">Apache Maven</a> dependency management in Java or <a href="http://www.nuget.org/" target="_blank">Nuget</a> for the Microsoft development platform, including .NET.
+            <br/>npm allows to install packages / dependencies, manage their versions and even deploy your own.
+        </p>
+        <h2>Update</h2>
+        <p>Node comes with npm installed so you should have a version of npm.
+            <br/>However, npm gets updated more frequently than Node does, so you'll want to make sure it's the latest version.</p>
+        <p>
+            <ol>
+                <li>update npm via terminal / console command
+                    <kbd>sudo npm install npm -g</kbd>
+                </li>
+                <li>check if terminal / console command
+                    <kbd>npm -v</kbd> returns the installed version number
+                    <samp>&#39;3.5.2&#39;</samp>
+                </li>
+            </ol>
+        </p>
+        <h2>Commands overview</h2>
+        <p>npm provides great documentation about it's environment and commands.
+            <br/>This section provides an overview of the most important and explains some concepts used by npm.
+            <br/>For more detailed information consult the <a href="https://docs.npmjs.com/" target="_blank">https://docs.npmjs.com/</a> website.</p>
+        <h3>Create a project</h3>
+        <p>
+            npm uses a package.json file to store and manage locally installed packages.
+            <br/>A package.json file can be compared to <a href="https://maven.apache.org/" target="_blank">Apache Maven</a>&#39;s .pom file.
+            <br/>Benefits:
+            <br/>
+            <ul>
+                <li><b>documents</b> packages your project depends</li>
+                <li>allows to specify the <b>versions</b> of a package that your project can use</li>
+                <li>makes <b>build</b> reproducable, meaning that its way easier to share with other developers</li>
+            </ul>
+            <br/>source: <a href="https://docs.npmjs.com/getting-started/using-a-package.json" target="_blank">Using package.json</a>
+        </p>
+        <p>
+            <dl>
+                <dt>
+                    <kbd>npm init</kbd>
+                </dt>
+                <dd>Creates a package.json file guided by a command line questionaire.
+                    <br/>This can be compared to an <a href="https://maven.apache.org/" target="_blank">Apache Maven</a> .pom file
+                </dd>
+                <dt>
+                    <kbd>npm init --yes</kbd>
+                </dt>
+                <dd>Creates a default package.json file.
+                </dd>
+            </dl>
+        </p>
+        <h3>Install packages</h3>
+        <p>
+            Packages can be installed <b>locally</b> and <b>globally</b>, why this distinction?
+        </p>
+        <p>
+            <b>Local</b> packages are used and required by your web project to run when hosted.
+            <br/>Frameworks like Angular JS, Bootstrap, JQuery, ... and all many many many other libraries you use to style, implement, ... your web application are typical examples.
+            <br/>This is because they are directly required by your web application and get downloaded from the server when someone views your website.
+        </p>
+        <p>
+            <b>Global</b> packages are more used to support the development of your web application.
+            <br/>Like building it with Bower, running it using HTTP Server, adding tasks using Grunt, ...
+            <br/>As you can guess these dependencies don't have to be included when hosting the application.
+        </p>
+        <p>
+            Where to find packages?
+            <br/>Most projects who provide an install via npm will list it on their website, but you can always <a href="https://www.npmjs.com/" target="_blank">search</a> for dependencies on the npm website.
+        </p>
+        <p>
+            <dl>
+                <dt>
+                    <kbd>npm install</kbd>
+                </dt>
+                <dd>If you have a package.json file in your directory then npm will look at the dependencies that are listed and download the latest versions using semantic versioning rules.
+                    <br/>This is basically the only command necessary when you check out an existing project containing a package.json file.
+                </dd>
+                <dt>
+                    <kbd>npm install &#60;package&#95;name&#62;</kbd>
+                </dt>
+                <dd>Installs a package locally.
+                    <br/>Use this for packages you need inside your web project, like: Bootstrap, JQuery, Angular JS, ...
+                </dd>
+                <dt>
+                    <kbd>npm install &#60;package&#95;name&#62; &#45;&#45;save</kbd>
+                </dt>
+                <dd>Installs a package locally and adds it to package.json dependencies.
+                </dd>
+                <dt>
+                    <kbd>npm install &#60;package&#95;name&#62; &#45;&#45;save&#45;dev</kbd>
+                </dt>
+                <dd>Installs a package locally and adds it to package.json development dependencies.
+                    <br/>This can be handy when you want to experiment with certain dependencies during the development cycle.
+                </dd>
+                <dt>
+                    <kbd>npm install -g &#60;package&#95;name&#62;</kbd>
+                </dt>
+                <dd>Installs a package globally.
+                    <br/>Use this for packages required by tools or (JavaScript) applications that process your project, like Grunt, HTTP Server, ...
+                    <br/>This command also updates a specific global package in contrast to
+                    <kbd>npm update -g</kbd>.
+                </dd>
+            </dl>
+        </p>
+        <p>
+            <dl>
+                <dt><a href="https://docs.npmjs.com/getting-started/semantic-versioning" target="_blank">Semantic versioning</a></dt>
+                <dd>Semantic versioning is a standard that a lot of projects use to communicate what kinds of changes are in this release.
+                    <br/>It's important to communicate what kinds of changes are in a release because sometimes those changes will break the code that depends on the package.</dd>
+            </dl>
+        </p>
+        <h3>Update packages</h3>
+        <p>
+            <dl>
+                <dt>
+                    <kbd>npm outdated</kbd>
+                </dt>
+                <dd>Check for outdated local packages.</dd>
+                <dt>
+                    <kbd>npm outdated -g --depth=0</kbd>
+                </dt>
+                <dd>Check for outdated global packages.</dd>
+                <dt>
+                    <kbd>npm update</kbd>
+                </dt>
+                <dd>Update ALL local packages by running this command in the same directory as your package.json file.</dd>
+                <dt>
+                    <kbd>npm update -g</kbd>
+                </dt>
+                <dd>Update ALL global packages.</dd>
+                <dt>
+                    <kbd>npm install -g &#60;package&#95;name&#62;</kbd>
+                </dt>
+                <dd>Update a specific global package.
+                </dd>
+            </dl>
+        </p>
+        <h3>Remove packages</h3>
+        <p>
+            <dl>
+                <dt>
+                    <kbd>npm uninstall &#60;package&#95;name&#62;</kbd>
+                </dt>
+                <dd>Remove a local package from your node_modules directory.</dd>
+                <dt>
+                    <kbd>npm uninstall --save &#60;package&#95;name&#62;</kbd>
+                </dt>
+                <dd>Remove a local package from the dependencies in package.json</dd>
+                <dt>
+                    <kbd>npm uninstall -g &#60;package&#95;name&#62;</kbd>
+                </dt>
+                <dd>Remove a global package.</dd>
+            </dl>
+        </p>
+        <h2>Tutorials</h2>
+        <p>
+            <ul class="list-group">
+                <li><a href="https://scotch.io/tag/node-js" target="_blank">Scotch IO - Node JS articles</a></li>
+            </ul>
+        </p>
+        <h1>Bootstrap</h1>
+        <h2>Introduction</h2>
+        <img src="http://getbootstrap.com/assets/brand/bootstrap-solid.svg" class="img-responsive img-logo" alt="Bootstrap logo">
+        <p><a href="http://getbootstrap.com/" target="_blank">Bootstrap</a> is the most popular
+            <a href="http://www.w3schools.com/html/" target="_blank">
+                <abbr title="HyperText Markup Language" class="initialism">HTML</abbr>
+            </a>&#32;5,
+            <a href="http://www.w3schools.com/css/" target="_blank">
+                <abbr title="Cascading Style Sheets" class="initialism">CSS</abbr>
+            </a>&#32;3&#32;and&#32;JavaScript&#32;framework&#32;for&#32;quickly&#32;developing&#32;responsive,&#32;mobile&#32;first&#32;projects&#32;on&#32;the&#32;web.
+        </p>
+        <p>What can you do with Bootstrap?
+            <br/>It allows to quickly prototype or develop web applications by using pre defined <a href="http://getbootstrap.com/components/" target="_blank">components</a> which are build out of standard
+            <abbr title="HyperText Markup Language" class="initialism">HTML</abbr>&#32;5&#32;tags&#32;and&#32;sets&#32;of&#32;pre&#32;defined
+            <abbr title="Cascading Style Sheets" class="initialism">CSS</abbr>&#32;3&#32;styles.
+            <br/>This&#32;provides&#32;responsive&#32;design&#32;out&#32;of&#32;the&#32;box,&#32;which&#32;is&#32;extendable&#32;and&#32;adapted&#32;by&#32;a&#32;large&#32;group&#32;of&#32;people,&#32;projects,&#32;frameworks,&#32;...
+        </p>
+        <p>
+            <dl>
+                <dt><a href="https://en.wikipedia.org/wiki/Responsive_web_design" target="_blank">Responsive&#32;web&#32;design</a></dt>
+                <dd>Responsive web design (
+                    <abbr title="Responsive web design" class="initialism">RWD</abbr>) is an approach to web design aimed at crafting sites to provide an optimal viewing and interaction experience
+                    <br/>easy reading and navigation with a minimum of resizing, panning, and scrolling across a wide range of devices (from desktop computer monitors to mobile phones).</dd>
+            </dl>
+        </p>
+        <p>
+            <ul class="list-group">
+                <li class="list-group-item"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>&#32;<a href="https://github.com/twbs/bootstrap/" target="_blank">open source</a></li>
+                <li class="list-group-item"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>&#32;<a href="https://en.wikipedia.org/wiki/Responsive_web_design" target="_blank">responsive</a></li>
+                <li class="list-group-item"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>&#32;default&#32;
+                    <abbr title="HyperText Markup Language" class="initialism">HTML</abbr>&#32;5,&#32;
+                    <abbr title="Cascading Style Sheets" class="initialism">CSS</abbr>&#32;3,&#32;JavaScript&#32;components</li>
+                <li class="list-group-item"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>&#32;extendable&#32;(themes:&#32;<a href="https://bootswatch.com/" target="_blank">Bootswatch</a>,&#32;<a href="https://wrapbootstrap.com/" target="_blank">Wrap&#32;Bootstrap</a>,&#32;...)</li>
+                <li class="list-group-item"><span class="glyphicon glyphicon-ok" aria-hidden="true"></span>&#32;great&#32;adaptation&#32;(<a href="https://angular-ui.github.io/bootstrap/" target="_blank">UI&#32;Bootstrap</a>,&#32;<a href="https://www.drupal.org/project/bootstrap" target="_blank">Bootstrap&#32;for&#32;Drupal</a>,&#32;...)</li>
+                <li class="list-group-item"><span class="glyphicon glyphicon-remove" aria-hidden="true"></span>&#32;<a href="https://jquery.com/" target="_blank">JQuery</a>&#32;dependency&#32;necessary&#32;for&#32;Bootstrap&#32;JavaScript&#32;plugins</li>
+            </ul>
+        </p>
+        <h3>Code snippets</h3>
+        <p>
+            <dl>
+                <dt><a href="http://bootsnipp.com/" target="_blank">Bootsnipp</a></dt>
+                <dd>Design elements, playground and code snippets for Bootstrap HTML/CSS/JS framework.</dd>
+            </dl>
+        </p>
+        <h3>Extentions</h3>
+        <p>
+            <dl>
+                <dt><a href="http://behigh.github.io/bootstrap_dropdowns_enhancement/" target="_blank">Bootstrap Enhancement</a></dt>
+                <dd>Enhences Bootstrap's functionality of dropdown menus (Sub-Menus, Radio & Checkboxes, Positioning, Bullet).</dd>
+            </dl>
+        </p>
+        <h3>Themes</h3>
+        <p>
+            <dl>
+                <dt><a href="https://bootswatch.com/" target="_blank">Bootswatch</a></dt>
+                <dd>Free themes for Bootstrap.</dd>
+                <dt><a href="https://wrapbootstrap.com/" target="_blank">Wrap Bootstrap</a></dt>
+                <dd>Affordable Bootstrap themes and templates.</dd>
+                <dt><a href="http://scripteden.com/" target="_blank">Wrap Bootstrap</a></dt>
+                <dd>Free or payable Bootstrap themes and templates.</dd>
+            </dl>
+        </p>
+        <h3>Testing</h3>
+        <p>
+            <dl>
+                <dt><a href="http://resizr.co/" target="_blank">Resizr</a></dt>
+                <dd>Test your responsive web page.</dd>
+            </dl>
+        </p>
+        <h2>Tutorials</h2>
+        <p>
+            <ul class="list-group">
+                <li><a href="http://www.w3schools.com/bootstrap/" target="_blank">W3 Schools - Bootstrap 3 Tutorial</a></li>
+                <li><a href="https://scotch.io/tag/bootstrap" target="_blank">Scotch IO - Bootstrap articles</a></li>
+            </ul>
+        </p>
+        <h1>Angular JS</h1>
+        <h2>Introduction</h2>
+        <img src="https://www.javascript.com/images/brand/logo.svg" class="img-responsive img-logo" alt="JavaScript.com logo">
+        <p>
+        </p>
+        <p>
+            <ul>
+                <li>well-maintained and evolving <a href="https://en.wikipedia.org/wiki/ECMAScript" target="_blank">ECMAScript</a> standard</li>
+            </ul>
+        </p>
+        <h3>Testing</h3>
+        <p>
+            <dl>
+                <dt><a href="https://angular.github.io/protractor/" target="_blank">Protractor</a></dt>
+                <dd>Protractor is an end-to-end test framework for AngularJS applications.
+                    <br/>Protractor runs tests against your application running in a real browser, interacting with it as a user would.</dd>
+            </dl>
+        </p>
+        <h3>Debugging and profiling</h3>
+        <p>
+            <dl>
+                <dt><a href="https://github.com/angular/batarang" target="_blank">Angular JS Batarang</a></dt>
+                <dd>Chrome extention for the developer tools.
+                    <br/>Adding tools for debugging and profiling AngularJS applications.</dd>
+            </dl>
+        </p>
+        <h2>Tutorials</h2>
+        <p>
+            <ul class="list-group">
+                <li><a href="http://www.w3schools.com/js/" target="_blank">W3 Schools - JavaScript Tutorial</a></li>
+                <li><a href="https://thinkster.io/topics/angular" target="_blank">Thinkster IO - Angular</a></li>
+            </ul>
+        </p>
+        <h2>Conferences</h2>
+        <p>
+            <ul class="list-group">
+                <li><a href="http://angularconnect.com/" target="_blank">Angular Connect</a></li>
+            </ul>
+        </p>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</body>
+
+</html>
