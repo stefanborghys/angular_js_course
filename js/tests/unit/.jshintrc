@@ -1,0 +1,6 @@
+// List of options: http://jshint.com/docs/options/
+{
+    "extends": "../../.jshintrc",
+    "devel": true, // defines globals that are usually used for logging poor-man's debugging
+    "qunit": true // defines globals exposed by the QUnit unit testing framework
+}

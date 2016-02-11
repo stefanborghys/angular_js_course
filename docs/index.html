@@ -7,12 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <title>Angular JS Course</title>
+    <!-- Material Design fonts -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
     <!-- Bootstrap -->
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
-    <link rel="stylesheet" href="css/angular-course.css">
+    <link rel="stylesheet" type="text/css" href="../bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="../bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+    <!-- Bootstrap Material Design -->
+    <link rel="stylesheet" type="text/css" href="../bower_components/bootstrap-material-design/dist/css/bootstrap-material-design.min.css">
+    <link rel="stylesheet" type="text/css" href="../bower_components/bootstrap-material-design/dist/css/ripples.min.css">
+    <link rel="stylesheet" type="text/css" href="css/angular-course.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -36,9 +41,22 @@
 </head>
 
 <body data-spy="scroll" data-target="#sidebar" data-offset="0">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">
+                    <i class="material-icons">face</i>
+                </a>
+            </div>
+        </div>
+    </nav>
     <div class="container-fluid">
-        <div style="height:200px; background-color:purple;">
-            <h1>Angular JS Course</h1>
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                <canvas id="trianglifyCanvas">
+                    <h1>Angular JS Course</h1>
+                </canvas>
+            </div>
         </div>
     </div>
     <div class="container">
@@ -600,10 +618,9 @@
                 <!-- affix  -->
                 <nav id="sidebar" class="bs-docs-sidebar hidden-print hidden-xs hidden-sm" data-spy="affix">
                     <!-- data-spy="affix" data-offset-top="200" -->
-                    <!-- nav-pills nav-stacked -->
                     <ul class="nav bs-docs-sidenav">
                         <!-- JavaScript -->
-                        <li><a href="#javascript">JavaScript</a>
+                        <li><a href="#javascript">JavaScript&#32;&#123;&#32;&#125;</a>
                             <ul class="nav">
                                 <li><a href="#javascript-introduction">Introduction</a>
                                     <ul class="nav">
@@ -623,7 +640,7 @@
                             </ul>
                         </li>
                         <!-- HTML -->
-                        <li><a href="#html">HTML</a>
+                        <li><a href="#html">&lt;HTML&#47;&gt;</a>
                             <ul class="nav">
                                 <li><a href="#html-introduction">Introduction</a>
                                     <ul class="nav">
@@ -634,7 +651,7 @@
                             </ul>
                         </li>
                         <!-- CSS -->
-                        <li><a href="#css">CSS</a>
+                        <li><a href="#css">&#46;CSS</a>
                             <ul class="nav">
                                 <li><a href="#css-introduction">Introduction</a>
                                     <ul class="nav">
@@ -649,7 +666,7 @@
                             </ul>
                         </li>
                         <!-- Node JS -->
-                        <li><a href="#node">Node JS</a>
+                        <li><a href="#node">Node&#32;JS</a>
                             <ul class="nav">
                                 <li><a href="#node-introduction">Introduction</a></li>
                                 <li><a href="#node-installation">Installation</a></li>
@@ -686,7 +703,7 @@
                             </ul>
                         </li>
                         <!-- Angular JS -->
-                        <li><a href="#angular">Angular JS</a>
+                        <li><a href="#angular">Angular&#32;JS</a>
                             <ul class="nav">
                                 <li><a href="#angular-introduction">Introduction</a>
                                     <ul class="nav">
@@ -703,10 +720,15 @@
             </div>
         </div>
     </div>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- JQuery -->
     <script src="../bower_components/jquery/dist/jquery.min.js"></script>
-    <!-- Latest compiled and minified JavaScript -->
+    <!-- Bootstrap -->
     <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- Bootstrap Meterial Design -->
+    <script src="../bower_components/bootstrap-material-design/dist/js/material.min.js"></script>
+    <script src="../bower_components/bootstrap-material-design/dist/js/ripples.min.js"></script>
+    <!-- Trianglify -->
+    <script src="../bower_components/trianglify/dist/trianglify.min.js"></script>
     <script src="js/angular-course.js"></script>
 </body>
 

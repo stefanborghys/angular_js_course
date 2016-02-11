@@ -1,0 +1,7 @@
+// List of options: http://jshint.com/docs/options/
+{
+    "extends": "../js/.jshintrc",
+    "asi": false, // suppresses warnings about missing semicolons
+    "browser": false, // defines globals exposed by modern browsers
+    "node": true // defines globals available when your code is running inside of the Node runtime environment
+}

@@ -1,27 +1,29 @@
 {
-    "name": "angular_course",
-    "description": "Angular JS introduction course.",
-    "main": "index.js",
-    "authors": [
-        "Stefan Borghys"
-    ],
-    "license": "MIT",
-    "keywords": [
-        "Angular",
-        "JS",
-        "introduction",
-        "course"
-    ],
-    "homepage": "https://stefanborghys.github.io/angular_js_course",
-    "moduleType": [],
-    "ignore": [
-        "**/.*",
-        "node_modules",
-        "bower_components",
-        "test",
-        "tests"
-    ],
-    "dependencies": {
-        "bootstrap": "^3.3.6"
-    }
+  "name": "angular_course",
+  "description": "Angular JS introduction course.",
+  "main": "index.js",
+  "authors": [
+    "Stefan Borghys"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "Angular",
+    "JS",
+    "introduction",
+    "course"
+  ],
+  "homepage": "https://stefanborghys.github.io/angular_js_course",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6",
+    "trianglify": "^0.4.0",
+    "bootstrap-material-design": "^0.5.8"
+  }
 }
